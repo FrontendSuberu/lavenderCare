@@ -3,13 +3,13 @@ import { Route, Routes } from "react-router-dom";
 // import Home from '../pages/Home'
 import Login from "../pages/admin/login/Login";
 import App from "../App";
-import CreateAccount from "../pages/admin/createAccount/createAccount";
 import VerifyEmail from "../pages/admin/verifyEmail/VerifyEmail";
 import RecoverAccount from "../pages/admin/recoverAccount/RecoverAccount";
 
 import Layout from "../pages/admin/components/layout/Layout";
 import Dashboard from "../pages/admin/dashboard/Dashboard";
 import UserManagement from "../pages/admin/userManagement/userManagement";
+import CreateAccount from "../pages/admin/createAccount/createAccount";
 
 function Routing() {
   return (
