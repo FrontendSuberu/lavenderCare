@@ -14,7 +14,7 @@ const sidebarMenu = [
     // icon: <FaUsers className="text-lg" />,
     path: '#',
     submenu: [
-      { title: 'All Users', path: '/admin/users' },
+      { title: 'All Users', path: '/admin/user-management' },
       { title: 'Activity Logs', path: '/admin/activity-logs' }
     ]
   },
@@ -155,7 +155,7 @@ function Sidebar() {
                         to={subItem.path}
                         className={({ isActive }) =>
                           `block px-4 py-2 text-sm text-white  rounded-r-lg transition-colors duration-200 ${
-                            isActive ? 'text-blue-600 font-medium bg-blue-50 border-r-4 border-blue-500' : ''
+                            isActive ? 'text-blue-600 font-medium border-r-4 border-blue-500' : ''
                           }`
                         }
                       >
@@ -169,8 +169,8 @@ function Sidebar() {
               <NavLink
                 to={item.path}
                 className={({ isActive }) =>
-                  `flex items-center px-4 py-3 text-white transition-colors duration-200 rounded-r-lg ${
-                    isActive ? 'text-blue-600 font-medium bg-blue-50 border-r-4 border-blue-500' : ''
+                  `flex items-center px-4 py-3 text-white transition-colors duration-200 ${
+                    isActive ? 'text-blue-600 font-medium border-b-2' : ''
                   }`
                 }
               >
