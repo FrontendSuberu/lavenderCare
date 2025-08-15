@@ -5,13 +5,13 @@ import Sidebar from "./Sidebar";
 
 function Layout() {
   return (
-    <div className="flex justify-between w-full h-screen">
+    <div className="flex w-full">
       <Sidebar />
 
-      <div className="flex-col left-[240px] relative flex gap-3">
+      <div className="flex-col relative w-full lg:w-auto flex">
         <Header />
 
-        <div className="bg-(--gray-100) w-[calc(100vw-260px)] h-full">
+        <div className="bg-(--gray-100) px-[12px] lg:px-[32px] w-full lg:w-[calc(100vw-260px)] h-full">
           <Outlet />
         </div>
       </div>
