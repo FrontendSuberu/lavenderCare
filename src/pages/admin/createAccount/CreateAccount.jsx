@@ -1,6 +1,5 @@
 import React from "react";
 import banner from "../components/ui/authBanner.svg";
-// import { Link } from "react-router-dom";
 
 function CreateAccount() {
   return (
