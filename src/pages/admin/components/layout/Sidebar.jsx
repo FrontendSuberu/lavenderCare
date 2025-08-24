@@ -120,13 +120,12 @@ function Sidebar() {
 
   const toggleMenu = (index) => {
     setOpenMenus(prev => ({
-      ...prev,
-      [index]: !prev[index]
+      ...prev, [index]: !prev[index]
     }));
   };
 
   return (
-    <div className='w-[260px] p-[24px] h-screen bg-(--primary-500) shadow-lg lg:block hidden sticky top-0 overflow-y-auto transition-all duration-300'>
+    <div className='w-[260px] py-[24px] px-[8px] h-screen bg-(--primary-500) shadow-lg lg:block hidden sticky top-0 overflow-y-auto'>
       <div className='p-4'>
         <h2 className='text-xl font-bold text-white'>LavenderCare</h2>
       </div>
@@ -148,7 +147,7 @@ function Sidebar() {
                 </button>
                 
                 {openMenus[index] && (
-                  <div className='ml-8 mt-1 space-y-1'>
+                  <div className='ml-2 mt-1 space-y-1'>
                     {item.submenu.map((subItem, subIndex) => (
                       <NavLink
                         key={subIndex}
