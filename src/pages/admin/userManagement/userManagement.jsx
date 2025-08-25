@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 // sampledata
 const sampleUsers = [
@@ -122,6 +123,7 @@ function UserManagement() {
 
   return (
     <div className="pb-[31px]">
+      {/* breadcrumb  */}
       <div className="flex py-[24px] items-center gap-1">
         <svg
           width="20"
@@ -185,9 +187,9 @@ function UserManagement() {
         <h2 className="text-[24px] font-semibold">All users</h2>
 
         {/* invite user button */}
-        <div className="py-2 px-6 bg-(--primary-500) text-white rounded-full">
+        <Link to="/admin/user-management/invite-user" className="py-2 px-6 bg-(--primary-500) text-white rounded-full">
           Invite user
-        </div>
+        </Link>
       </div>
 
       {/* user management container  */}

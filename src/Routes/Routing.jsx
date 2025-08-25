@@ -9,6 +9,7 @@ import RecoverAccount from "../pages/admin/recoverAccount/RecoverAccount";
 import Layout from "../pages/admin/components/layout/Layout";
 import Dashboard from "../pages/admin/dashboard/Dashboard";
 import UserManagement from "../pages/admin/userManagement/userManagement";
+import InviteUsers from "../pages/admin/userManagement/InviteUsers";
 // import CreateAccount from "../pages/admin/createAccount/createAccount";
 
 function Routing() {
@@ -26,6 +27,7 @@ function Routing() {
       <Route path="/admin" element={<Layout />}>
         <Route path="/admin/dashboard" element={<Dashboard />} />
         <Route path="/admin/user-management" element={<UserManagement />} />
+        <Route path="/admin/user-management/invite-user" element={<InviteUsers />} />
       </Route>
     </Routes>
 
