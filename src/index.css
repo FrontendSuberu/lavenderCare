@@ -15,6 +15,7 @@ body{
 
 :root {
   --primary-500: #6F3DCB; 
+  --primary-50: #F1ECFA; 
   --success: #F0F5EA;  
   --success_text: #669F2A;  
   --error: #FCE8E7;

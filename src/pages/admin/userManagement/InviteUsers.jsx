@@ -60,6 +60,63 @@ function InviteUsers() {
         </svg>
         <p className="text-(--primary-500) font-[600]">Invite Users</p>
       </div>
+
+      <div className="bg-white p-4 rounded-[16px]">
+        <div className="w-full max-w-[425px] mx-auto">
+          <h2 className="text-[24px] font-semibold py-6">Invite Users</h2>
+          <form className="pb-10">
+            <div className="flex flex-col gap-4">
+              <label>
+                <p className="text-sm text-gray-600 pb-1">Email Address</p>
+                <input
+                  type="text"
+                  className="placeholder:text-gray-600 py-[10px] px-4 rounded-md border-gray-300 w-full border"
+                  placeholder="Type your email address"
+                />
+              </label>
+
+              <label className="relative">
+                <p className="text-sm text-gray-600 pb-1">Role</p>
+                <div
+                  className="placeholder:text-gray-600 py-[10px] h-[44px] px-4 rounded-md border-gray-300 w-full border"
+                  placeholder="Type your email address"
+                />
+                <svg
+                  className="absolute right-3 top-[27px] transform translate-y-1/2 pointer-events-none"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_2109_31897)">
+                    <path
+                      d="M13.825 7.1582L10 10.9749L6.175 7.1582L5 8.3332L10 13.3332L15 8.3332L13.825 7.1582Z"
+                      fill="#020201"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_2109_31897">
+                      <rect width="20" height="20" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </label>
+              <p className="text-[16px] leading-0 text-gray-400 text-right">+ Create Admin role</p>
+            </div>
+
+            {/* invite user buttons */}
+            <div className="flex pt-8 flex-col md:flex-row gap-4 md:gap-6 items-center">
+                <button className="w-full bg-(--primary-50) text-(--primary-500) font-semibold py-3 rounded-full">
+                    Cancel
+                </button>
+                <button className="w-full bg-(--primary-500) text-white py-3 font-semibold rounded-full">
+                    Send Invite
+                </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   );
 }
