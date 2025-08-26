@@ -39,7 +39,7 @@ const logs = [
 function ActivityLogs() {
   return (
     <div className="pb-[30px]">
-    {/* breadcrumb */}
+      {/* breadcrumb */}
       <div className="flex py-[24px] pb-[24px] items-center gap-1">
         <svg
           width="20"
@@ -96,51 +96,54 @@ function ActivityLogs() {
             </clipPath>
           </defs>
         </svg>
-        <p className="text-(--primary-500) font-[600] text-[12px]">Invite Users</p>
+        <p className="text-(--primary-500) font-[600] text-[12px]">
+          Invite Users
+        </p>
       </div>
 
-      <h2 className="text-xl sm:text-2xl font-bold">Activity Logs</h2>
+      <div className="flex items-center justify-between pb-5">
+        <h2 className="text-xl sm:text-2xl font-bold">Activity Logs</h2>
 
-      {/* last 30days and filter by button */}
-      <div className="flex flex-wrap gap-2 mb-4 justify-end">
-        <button className="bg-white px-2  flex items-center gap-3 sm:px-3 py-2 rounded-[6px] border border-gray-200">
-          Last 30 days{" "}
-          <svg
-            width="16"
-            height="10"
-            viewBox="0 0 16 10"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0.351472 0.751862C0.820101 0.283233 1.5799 0.283233 2.04853 0.751863L8 6.70334L13.9515 0.751864C14.4201 0.283235 15.1799 0.283235 15.6485 0.751864C16.1172 1.22049 16.1172 1.98029 15.6485 2.44892L8.84853 9.24892C8.62348 9.47396 8.31826 9.60039 8 9.60039C7.68174 9.60039 7.37651 9.47396 7.15147 9.24892L0.351472 2.44892C-0.117157 1.98029 -0.117157 1.22049 0.351472 0.751862Z"
-              fill="black"
-              fill-opacity="0.5"
-            />
-          </svg>
-        </button>
-        <button className="bg-white px-2 flex items-center gap-3  sm:px-3 py-2 rounded-[6px] border border-gray-200">
-          Filter by: All{" "}
-          <svg
-            width="16"
-            height="10"
-            viewBox="0 0 16 10"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0.351472 0.751862C0.820101 0.283233 1.5799 0.283233 2.04853 0.751863L8 6.70334L13.9515 0.751864C14.4201 0.283235 15.1799 0.283235 15.6485 0.751864C16.1172 1.22049 16.1172 1.98029 15.6485 2.44892L8.84853 9.24892C8.62348 9.47396 8.31826 9.60039 8 9.60039C7.68174 9.60039 7.37651 9.47396 7.15147 9.24892L0.351472 2.44892C-0.117157 1.98029 -0.117157 1.22049 0.351472 0.751862Z"
-              fill="black"
-              fill-opacity="0.5"
-            />
-          </svg>
-        </button>
+        {/* last 30days and filter by button */}
+        <div className="flex flex-wrap w-max gap-2 justify-end">
+          <button className="bg-white px-2  flex items-center gap-3 sm:px-3 py-2 rounded-[6px] border border-gray-200">
+            Last 30 days{" "}
+            <svg
+              width="16"
+              height="10"
+              viewBox="0 0 16 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.351472 0.751862C0.820101 0.283233 1.5799 0.283233 2.04853 0.751863L8 6.70334L13.9515 0.751864C14.4201 0.283235 15.1799 0.283235 15.6485 0.751864C16.1172 1.22049 16.1172 1.98029 15.6485 2.44892L8.84853 9.24892C8.62348 9.47396 8.31826 9.60039 8 9.60039C7.68174 9.60039 7.37651 9.47396 7.15147 9.24892L0.351472 2.44892C-0.117157 1.98029 -0.117157 1.22049 0.351472 0.751862Z"
+                fill="black"
+                fill-opacity="0.5"
+              />
+            </svg>
+          </button>
+          <button className="bg-white px-2 flex items-center gap-3  sm:px-3 py-2 rounded-[6px] border border-gray-200">
+            Filter by: All{" "}
+            <svg
+              width="16"
+              height="10"
+              viewBox="0 0 16 10"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0.351472 0.751862C0.820101 0.283233 1.5799 0.283233 2.04853 0.751863L8 6.70334L13.9515 0.751864C14.4201 0.283235 15.1799 0.283235 15.6485 0.751864C16.1172 1.22049 16.1172 1.98029 15.6485 2.44892L8.84853 9.24892C8.62348 9.47396 8.31826 9.60039 8 9.60039C7.68174 9.60039 7.37651 9.47396 7.15147 9.24892L0.351472 2.44892C-0.117157 1.98029 -0.117157 1.22049 0.351472 0.751862Z"
+                fill="black"
+                fill-opacity="0.5"
+              />
+            </svg>
+          </button>
+        </div>
       </div>
-
 
       <div className="overflow-x-auto rounded-xl border border-gray-200">
         <table className="min-w-full sm:text-sm">

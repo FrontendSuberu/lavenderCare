@@ -35,7 +35,7 @@ const sidebarMenu = [
     submenu: [
       { title: 'View All', path: '/admin/healthcare-provider' },
       { title: 'Review Credentials', path: '/admin/credentials-review' },
-      { title: 'Mental Health Screening', path: '/admin/screening' },
+      { title: 'Mental Health Screening', path: '/admin/mental-health-screening' },
       { title: 'Caseloads Summaries', path: '/admin/caseloads' }
     ]
   },

@@ -1,6 +1,4 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
-// import Home from '../pages/Home'
 import Login from "../pages/admin/login/Login";
 import App from "../App";
 import VerifyEmail from "../pages/admin/verifyEmail/VerifyEmail";
@@ -16,7 +14,10 @@ import Disputes from "../pages/admin/serviceProvider/Disputes";
 import DisputeDetails from "../pages/admin/serviceProvider/DisputeDetails";
 import HealthcareProvider from "../pages/admin/healthcareProvider/HealthcareProvider";
 import Performance from "../pages/admin/serviceProvider/Performance";
-// import CreateAccount from "../pages/admin/createAccount/createAccount";
+import ReviewCredential from "../pages/admin/healthcareProvider/ReviewCredential";
+import React from "react";
+import MentalHealthScreeningDetail from "../pages/admin/healthcareProvider/MentalHealthScreeningDetail";
+import MentalHealthScreening from "../pages/admin/healthcareProvider/MentalHealthScreening";
 
 function Routing() {
   return (
@@ -43,8 +44,12 @@ function Routing() {
         <Route path="/admin/service-provider/performance" element={<Performance />} />
         <Route path="/admin/service-provider/disputes/:id" element={<DisputeDetails />} />
 
-        {/* healthcare provider */}
-        <Route path="/admin/healthcare-provider" element={<HealthcareProvider />} />
+  {/* healthcare provider */}
+  <Route path="/admin/healthcare-provider" element={<HealthcareProvider />} />
+  <Route path="/admin/credentials-review" element={<ReviewCredential />} />
+  {/* mental health screening */}
+  <Route path="/admin/mental-health-screening" element={<MentalHealthScreening />} />
+  <Route path="/admin/mental-health-screening/:id" element={<MentalHealthScreeningDetail />} />
       </Route>
     </Routes>
 
