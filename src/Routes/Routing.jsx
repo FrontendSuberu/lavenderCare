@@ -10,6 +10,10 @@ import Layout from "../pages/admin/components/layout/Layout";
 import Dashboard from "../pages/admin/dashboard/Dashboard";
 import UserManagement from "../pages/admin/userManagement/userManagement";
 import InviteUsers from "../pages/admin/userManagement/InviteUsers";
+import ServiceProvider from "../pages/admin/serviceProvider/ServiceProvider";
+import ActivityLogs from "../pages/admin/activityLogs/ActivityLogs";
+import Disputes from "../pages/admin/serviceProvider/Disputes";
+import DisputeDetails from "../pages/admin/serviceProvider/DisputeDetails";
 // import CreateAccount from "../pages/admin/createAccount/createAccount";
 
 function Routing() {
@@ -28,6 +32,10 @@ function Routing() {
         <Route path="/admin/dashboard" element={<Dashboard />} />
         <Route path="/admin/user-management" element={<UserManagement />} />
         <Route path="/admin/user-management/invite-user" element={<InviteUsers />} />
+        <Route path="/admin/service-providers" element={<ServiceProvider />} />
+        <Route path="/admin/activity-logs" element={<ActivityLogs />} />
+  <Route path="/admin/service-provider/disputes" element={<Disputes />} />
+  <Route path="/admin/service-provider/disputes/:id" element={<DisputeDetails />} />
       </Route>
     </Routes>
 

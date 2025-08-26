@@ -24,8 +24,8 @@ const sidebarMenu = [
     path: '#',
     submenu: [
       { title: 'View All', path: '/admin/service-providers' },
-      { title: 'Performance', path: '/admin/provider-performance' },
-      { title: 'Disputes and Issues', path: '/admin/provider-disputes' }
+      { title: 'Performance', path: '/admin/service-provider/performance' },
+      { title: 'Disputes and Issues', path: '/admin/service-provider/disputes' }
     ]
   },
   {
