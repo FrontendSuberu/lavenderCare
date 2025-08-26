@@ -39,6 +39,7 @@ const logs = [
 function ActivityLogs() {
   return (
     <div className="pb-[30px]">
+    {/* breadcrumb */}
       <div className="flex py-[24px] pb-[24px] items-center gap-1">
         <svg
           width="20"
@@ -75,7 +76,7 @@ function ActivityLogs() {
             </clipPath>
           </defs>
         </svg>
-        <p>User management</p>
+        <p className="text-[12px]">User management</p>
         <svg
           width="16"
           height="16"
@@ -95,7 +96,7 @@ function ActivityLogs() {
             </clipPath>
           </defs>
         </svg>
-        <p className="text-(--primary-500) font-[600]">Invite Users</p>
+        <p className="text-(--primary-500) font-[600] text-[12px]">Invite Users</p>
       </div>
 
       <h2 className="text-xl sm:text-2xl font-bold">Activity Logs</h2>

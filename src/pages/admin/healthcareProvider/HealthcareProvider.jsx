@@ -97,7 +97,7 @@ function HealthcareProvider() {
             </clipPath>
           </defs>
         </svg>
-        <p>Health providers</p>
+        <p className="text-[12px]">Health providers</p>
         <svg
           width="16"
           height="16"
@@ -117,7 +117,7 @@ function HealthcareProvider() {
             </clipPath>
           </defs>
         </svg>
-        <p className="text-(--primary-500) font-[600]">View all</p>
+        <p className="text-(--primary-500) font-[600] text-[12px]">View all</p>
       </div>
 
       {/* healthcare provider title */}

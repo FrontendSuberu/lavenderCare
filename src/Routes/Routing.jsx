@@ -15,6 +15,7 @@ import ActivityLogs from "../pages/admin/activityLogs/ActivityLogs";
 import Disputes from "../pages/admin/serviceProvider/Disputes";
 import DisputeDetails from "../pages/admin/serviceProvider/DisputeDetails";
 import HealthcareProvider from "../pages/admin/healthcareProvider/HealthcareProvider";
+import Performance from "../pages/admin/serviceProvider/Performance";
 // import CreateAccount from "../pages/admin/createAccount/createAccount";
 
 function Routing() {
@@ -31,13 +32,19 @@ function Routing() {
 
       <Route path="/admin" element={<Layout />}>
         <Route path="/admin/dashboard" element={<Dashboard />} />
+        {/* user management */}
         <Route path="/admin/user-management" element={<UserManagement />} />
-        <Route path="/admin/user-management/invite-user" element={<InviteUsers />} />
-        <Route path="/admin/service-providers" element={<ServiceProvider />} />
         <Route path="/admin/activity-logs" element={<ActivityLogs />} />
-  <Route path="/admin/service-provider/disputes" element={<Disputes />} />
-  <Route path="/admin/service-provider/disputes/:id" element={<DisputeDetails />} />
-  <Route path="/admin/healthcare-provider" element={<HealthcareProvider />} />
+        <Route path="/admin/user-management/invite-user" element={<InviteUsers />} />
+
+        {/* service providers */}
+        <Route path="/admin/service-providers" element={<ServiceProvider />} />
+        <Route path="/admin/service-provider/disputes" element={<Disputes />} />
+        <Route path="/admin/service-provider/performance" element={<Performance />} />
+        <Route path="/admin/service-provider/disputes/:id" element={<DisputeDetails />} />
+
+        {/* healthcare provider */}
+        <Route path="/admin/healthcare-provider" element={<HealthcareProvider />} />
       </Route>
     </Routes>
 

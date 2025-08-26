@@ -49,67 +49,93 @@ function Disputes() {
   const navigate = useNavigate();
   return (
     <div className=" pt-6 min-h-screen">
-      <div className="flex flex-wrap items-center gap-2 text-xs text-gray-400 mb-2 sm:mb-4">
-        <span>Service Providers</span>
-        <span>›</span>
-        <span className="text-purple-600 font-semibold">Disputes & Issues</span>
+      {/* breadcrumbs */}
+      <div className="flex pb-6 items-center gap-1">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.66667 14.1663H13.3333M9.18141 2.30297L3.52949 6.6989C3.15168 6.99276 2.96278 7.13968 2.82669 7.32368C2.70614 7.48667 2.61633 7.67029 2.56169 7.86551C2.5 8.0859 2.5 8.32521 2.5 8.80384V14.833C2.5 15.7664 2.5 16.2331 2.68166 16.5896C2.84144 16.9032 3.09641 17.1582 3.41002 17.318C3.76654 17.4996 4.23325 17.4996 5.16667 17.4996H14.8333C15.7668 17.4996 16.2335 17.4996 16.59 17.318C16.9036 17.1582 17.1586 16.9032 17.3183 16.5896C17.5 16.2331 17.5 15.7664 17.5 14.833V8.80384C17.5 8.32521 17.5 8.0859 17.4383 7.86551C17.3837 7.67029 17.2939 7.48667 17.1733 7.32368C17.0372 7.13968 16.8483 6.99276 16.4705 6.69891L10.8186 2.30297C10.5258 2.07526 10.3794 1.9614 10.2178 1.91763C10.0752 1.87902 9.92484 1.87902 9.78221 1.91763C9.62057 1.9614 9.47418 2.07526 9.18141 2.30297Z"
+            stroke="#8B8B8A"
+            stroke-width="1.66667"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_1918_35894)">
+            <path
+              d="M6.66656 4L5.72656 4.94L8.7799 8L5.72656 11.06L6.66656 12L10.6666 8L6.66656 4Z"
+              fill="#8B8B8A"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_1918_35894">
+              <rect width="16" height="16" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <p className="text-[12px]">Service providers</p>
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_1918_35894)">
+            <path
+              d="M6.66656 4L5.72656 4.94L8.7799 8L5.72656 11.06L6.66656 12L10.6666 8L6.66656 4Z"
+              fill="#8B8B8A"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_1918_35894">
+              <rect width="16" height="16" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <p className="text-(--primary-500) font-[600] text-[12px]">Disputes and issues</p>
       </div>
 
       {/* disputes header */}
       <div className="flex justify-between items-center">
+        <div>
+          <h2 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">
+            Disputes & Issues
+          </h2>
+          <div className="text-xs text-gray-500 mb-4">
+            Manage and resolve disputes and issues related to service providers.
+          </div>
+        </div>
 
-      <div>
-        <h2 className="text-xl sm:text-2xl font-bold mb-1 sm:mb-2">
-          Disputes & Issues
-        </h2>
-        <div className="text-xs text-gray-500 mb-4">
-          Manage and resolve disputes and issues related to service providers.
+        <div className="flex flex-wrap gap-2 mb-4 justify-end w-max">
+          <select className="bg-white px-2 flex items-center gap-3 sm:px-3 py-2 rounded text-xs">
+            <option>Assign to Me </option>
+            <option>Assign to others</option>
+          </select>
+
+          <select className="bg-white px-2 flex items-center gap-3 sm:px-3 py-2 rounded text-xs">
+            <option>in progress</option>
+            <option>resolved</option>
+            <option>Open</option>
+          </select>
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-2 mb-4 justify-end w-max">
-        <button className="bg-white px-2 flex items-center gap-3 sm:px-3 py-2 rounded text-xs">
-          Assign to Me{" "}
-          <svg
-            width="12"
-            height="10"
-            viewBox="0 0 16 10"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0.351472 0.751862C0.820101 0.283233 1.5799 0.283233 2.04853 0.751863L8 6.70334L13.9515 0.751864C14.4201 0.283235 15.1799 0.283235 15.6485 0.751864C16.1172 1.22049 16.1172 1.98029 15.6485 2.44892L8.84853 9.24892C8.62348 9.47396 8.31826 9.60039 8 9.60039C7.68174 9.60039 7.37651 9.47396 7.15147 9.24892L0.351472 2.44892C-0.117157 1.98029 -0.117157 1.22049 0.351472 0.751862Z"
-              fill="black"
-              fill-opacity="0.5"
-            />
-          </svg>
-        </button>
-        <button className="bg-white px-2 flex items-center gap-3 sm:px-3 py-2 rounded text-xs">
-          Status{" "}
-          <svg
-            width="12"
-            height="10"
-            viewBox="0 0 16 10"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M0.351472 0.751862C0.820101 0.283233 1.5799 0.283233 2.04853 0.751863L8 6.70334L13.9515 0.751864C14.4201 0.283235 15.1799 0.283235 15.6485 0.751864C16.1172 1.22049 16.1172 1.98029 15.6485 2.44892L8.84853 9.24892C8.62348 9.47396 8.31826 9.60039 8 9.60039C7.68174 9.60039 7.37651 9.47396 7.15147 9.24892L0.351472 2.44892C-0.117157 1.98029 -0.117157 1.22049 0.351472 0.751862Z"
-              fill="black"
-              fill-opacity="0.5"
-            />
-          </svg>
-        </button>
-      </div>
-      </div>
-
-
-      <div className="bg-white rounded-xl p-2 sm:p-4 shadow-sm">
-        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-2">
+      <div className="bg-white rounded-xl p-2 sm:p-4">
+        <div className="flex flex-col sm:flex-row border-b border-gray-300 pb-4 sm:items-center sm:justify-between gap-2 mb-2">
           <div className="font-semibold text-sm mb-2 sm:mb-0">All Disputes</div>
           <div className="flex gap-2 w-full sm:w-auto">
             <div className="relative flex-1">
@@ -129,7 +155,7 @@ function Disputes() {
             </button>
           </div>
         </div>
-        <div className="overflow-x-auto rounded-xl border border-gray-100">
+        <div className="overflow-x-auto  border border-gray-100">
           <table className="min-w-full text-xs sm:text-sm">
             <thead className="bg-gray-50">
               <tr>

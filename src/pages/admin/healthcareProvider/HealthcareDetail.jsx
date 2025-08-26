@@ -111,7 +111,7 @@ function HealthcareDetail() {
             </clipPath>
           </defs>
         </svg>
-        <p>Healthcare providers</p>
+        <p className="text-[12px]">Healthcare providers</p>
         <svg
           width="16"
           height="16"
@@ -131,7 +131,7 @@ function HealthcareDetail() {
             </clipPath>
           </defs>
         </svg>
-        <p className="text-(--primary-500) font-[600]">View all</p>
+        <p className="text-(--primary-500) font-[600] text-[12px]">View all</p>
       </div>
 
       <div className="grid grid-cols-1 relative md:grid-cols-3 gap-6">
