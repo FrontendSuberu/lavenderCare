@@ -33,7 +33,7 @@ const sidebarMenu = [
     // icon: <FaUserMd className="text-lg" />,
     path: '#',
     submenu: [
-      { title: 'View All', path: '/admin/healthcare-providers' },
+      { title: 'View All', path: '/admin/healthcare-provider' },
       { title: 'Review Credentials', path: '/admin/credentials-review' },
       { title: 'Mental Health Screening', path: '/admin/screening' },
       { title: 'Caseloads Summaries', path: '/admin/caseloads' }

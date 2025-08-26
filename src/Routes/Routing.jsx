@@ -14,6 +14,7 @@ import ServiceProvider from "../pages/admin/serviceProvider/ServiceProvider";
 import ActivityLogs from "../pages/admin/activityLogs/ActivityLogs";
 import Disputes from "../pages/admin/serviceProvider/Disputes";
 import DisputeDetails from "../pages/admin/serviceProvider/DisputeDetails";
+import HealthcareProvider from "../pages/admin/healthcareProvider/HealthcareProvider";
 // import CreateAccount from "../pages/admin/createAccount/createAccount";
 
 function Routing() {
@@ -36,6 +37,7 @@ function Routing() {
         <Route path="/admin/activity-logs" element={<ActivityLogs />} />
   <Route path="/admin/service-provider/disputes" element={<Disputes />} />
   <Route path="/admin/service-provider/disputes/:id" element={<DisputeDetails />} />
+  <Route path="/admin/healthcare-provider" element={<HealthcareProvider />} />
       </Route>
     </Routes>
 
