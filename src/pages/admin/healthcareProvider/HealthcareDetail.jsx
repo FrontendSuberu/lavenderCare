@@ -460,12 +460,12 @@ function HealthcareDetail() {
 
       {/* Suspend Modal */}
       {showSuspend && (
-        <div className="fixed inset-0 z-40 flex items-center justify-center bg-black bg-opacity-30">
+        <div className="fixed inset-0 z-[4000] flex items-center justify-center cursor-pointer bg-black/80" onClick={() => setShowSuspend(false)}>
           <div className="bg-white rounded-xl shadow-lg p-6 w-[90%] max-w-md mx-auto">
             <div className="flex justify-between items-center mb-4">
-              <div className="font-semibold text-lg">Suspend Provide</div>
+              <div className="font-semibold text-lg">Suspend Provider</div>
               <button
-                className="text-gray-400 text-xl"
+                className="text-gray-400 hover:cursor-pointer text-xl"
                 onClick={() => setShowSuspend(false)}
               >
                 &times;
@@ -476,12 +476,12 @@ function HealthcareDetail() {
             </div>
             <div className="flex justify-end gap-2">
               <button
-                className="bg-gray-100 px-4 py-2 rounded"
+                className="bg-gray-100 hover:cursor-pointer px-4 py-2 rounded"
                 onClick={() => setShowSuspend(false)}
               >
                 Cancel
               </button>
-              <button className="bg-red-600 text-white px-4 py-2 rounded">
+              <button className="bg-red-600 hover:cursor-pointer text-white px-4 py-2 rounded">
                 Suspend
               </button>
             </div>
